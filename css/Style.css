@@ -135,7 +135,7 @@
 
 .hack > span {
   color: white;
-  font-size: 90px;
+  font-size: 130px;
   /* font-family: Montserrat; */
   font-weight: bolder;
   letter-spacing: 0.4em;
@@ -372,6 +372,9 @@
 }
 .hack-content{
     position: absolute;
-    right: 7rem;
+    right: 0rem;
     top: 6rem;
+}
+.hero-section{
+  width: 75% !important;
 }
