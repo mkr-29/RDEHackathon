@@ -378,3 +378,8 @@
 .hero-section{
   width: 75% !important;
 }
+.iel{
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
