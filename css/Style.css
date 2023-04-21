@@ -1,0 +1,377 @@
+@font-face {
+  font-family: glitch;
+  src: url(../fonts/Pixel\ LCD-7.ttf);
+}
+.timer {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  width: 30rem;
+  gap: 1rem;
+}
+.timer__heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.timer__main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.timer__block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  color: white;
+  background: rgba(217, 217, 217, 0.3);
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.5px);
+  border-radius: 5px;
+  padding: 1.4rem 3.2rem;
+  width: 5rem;
+  border: 1px solid white;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: glitch;
+  padding-top: 1.8rem;
+}
+.timer__descriptor {
+  font-size: 0.8rem;
+}
+.hackatit {
+  font-size: 7rem;
+  color: white;
+  position: absolute;
+  right: 15rem;
+}
+/* glitch effect on .hackatit */
+.hackatit::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 #fff;
+  color: #000;
+  overflow: hidden;
+  animation: glitch 2s infinite linear alternate-reverse;
+}
+.hackatit::after {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 #fff;
+  color: #000;
+  overflow: hidden;
+  animation: glitch 2s infinite linear alternate-reverse;
+}
+@keyframes glitch {
+  0% {
+    clip: rect(44px, 9999px, 56px, 0);
+  }
+  5% {
+    clip: rect(16px, 9999px, 82px, 0);
+  }
+  10% {
+    clip: rect(48px, 9999px, 56px, 0);
+  }
+  15% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  20% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  25% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  30% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  35% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  40% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  45% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  50% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  55% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  60% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  65% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  70% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  75% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  80% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  85% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  90% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  95% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+  100% {
+    clip: rect(0px, 9999px, 100px, 0);
+  }
+}
+
+.hack > span {
+  color: white;
+  font-size: 90px;
+  /* font-family: Montserrat; */
+  font-weight: bolder;
+  letter-spacing: 0.4em;
+  opacity: 0.15;
+}
+#N {
+  letter-spacing: 0;
+}
+#I {
+  opacity: 1;
+  animation: flickerI 2s linear reverse infinite;
+  position: relative;
+}
+#I::after {
+  content: "";
+  width: 150%;
+  -webkit-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+  -moz-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+  box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
+}
+#L,
+#G,
+#N {
+  animation: flickerLG 2s linear reverse infinite;
+  position: relative;
+}
+#L::after,
+#L::before {
+  content: " ";
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  position: absolute;
+  top: -50%;
+  left: 100%;
+  border-radius: 100%;
+  opacity: 0.05;
+  filter: blur(10px);
+}
+#L::after {
+  width: 300px;
+  height: 301px;
+  top: -150%;
+  left: -38%;
+  opacity: 0.1;
+  filter: blur(10px);
+}
+#H {
+  animation: flickerH 2s linear reverse infinite;
+}
+
+#T {
+  animation: flickerH 2s linear reverse infinite;
+}
+
+@keyframes flickerI {
+  0% {
+    opacity: 0.4;
+  }
+  5% {
+    opacity: 0.5;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flickerLG {
+  0% {
+    opacity: 0.19;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.25;
+  }
+  15% {
+    opacity: 0.35;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  35% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.25;
+  }
+  45% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.35;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes flickerH {
+  0% {
+    opacity: 0.15;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0.12;
+  }
+  15% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  35% {
+    opacity: 0.05;
+  }
+  40% {
+    opacity: 0.12;
+  }
+  45% {
+    opacity: 0.15;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.18;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes flickerT {
+  0% {
+    opacity: 0.01;
+  }
+  5% {
+    opacity: 0.05;
+  }
+  10% {
+    opacity: 0.03;
+  }
+  15% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.07;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 0.05;
+  }
+  40% {
+    opacity: 0.06;
+  }
+  45% {
+    opacity: 0.1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+.hack-content{
+    position: absolute;
+    right: 10rem;
+    top: 5rem;
+}

@@ -1,0 +1,177 @@
+body {
+  /* background: url(../images/hackathon/space-galaxy-background.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hackathon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 82vh;
+}
+.hack-content {
+  display: flex;
+  width: 78%;
+  height: 53%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.hack-content h1{
+  font-size: 7rem;
+  font-weight: 900;
+  color: #fff;
+}
+.glitch {
+	overflow-x: hidden;
+}
+.head-layers {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.head-layer {
+	position: absolute;
+	left: 32.9%;
+	top: 44%;
+}
+.head-layer:nth-child(1) {
+	transform: translateX(-5%);
+	animation: glitch-anim-1 2s infinite linear alternate;
+}
+.head-layer:nth-child(2) {
+	transform: translateX(3%) translateY(3%);
+	animation: glitch-anim-2 2.3s -.8s infinite linear alternate;
+}
+.head-layer:nth-child(3) {
+	transform: translateX(5%);
+	animation: glitch-anim-flash 1.54s infinite linear;
+}
+@keyframes glitch-anim-1 {
+	0% {
+		clip-path: polygon(0 0%, 100% 0%, 100% 5%, 0 5%);
+	}
+	10% {
+		clip-path: polygon(0 15%, 100% 15%, 100% 15%, 0 15%);
+	}
+	20% {
+		clip-path: polygon(0 10%, 100% 10%, 100% 20%, 0 20%);
+	}
+	30% {
+		clip-path: polygon(0 1%, 100% 1%, 100% 2%, 0 2%);
+	}
+	40% {
+		clip-path: polygon(0 35%, 100% 35%, 100% 35%, 0 35%);
+	}
+	50% {
+		clip-path: polygon(0 45%, 100% 45%, 100% 46%, 0 46%);
+	}
+	60% {
+		clip-path: polygon(0 50%, 100% 50%, 100% 70%, 0 70%);
+	}
+	70% {
+		clip-path: polygon(0 70%, 100% 70%, 100% 70%, 0 70%);
+	}
+	80% {
+		clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+	}
+	90% {
+		clip-path: polygon(0 50%, 100% 50%, 100% 55%, 0 55%);
+	}
+	100% {
+		clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+	}
+}
+@keyframes glitch-anim-2 {
+	0% {
+		clip-path: polygon(0 15%, 100% 15%, 100% 30%, 0 30%);
+	}
+	15% {
+		clip-path: polygon(0 3%, 100% 3%, 100% 3%, 0 3%);
+	}
+	25% {
+		clip-path: polygon(0 8%, 100% 8%, 100% 20%, 0 20%);
+	}
+	30% {
+		clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+	}
+	45% {
+		clip-path: polygon(0 45%, 100% 45%, 100% 45%, 0 45%);
+	}
+	50% {
+		clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%);
+	}
+	65% {
+		clip-path: polygon(0 60%, 100% 60%, 100% 60%, 0 60%);
+	}
+	75% {
+		clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+	}
+	80% {
+		clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+	}
+	95% {
+		clip-path: polygon(0 45%, 100% 45%, 100% 60%, 0 60%);
+	}
+	100% {
+		clip-path: polygon(0 11%, 100% 11%, 100% 15%, 0 15%);
+	}
+}
+@keyframes glitch-anim-flash {
+	0% {
+		opacity: .2;
+	}
+	30%, 100% {
+		opacity: 0;
+	}
+}
+.hun-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78%;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: white;
+  flex-direction: column;
+}
+.hun-about h2{
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+}
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container.with-line-above-astro{
+  padding-left: 0;
+  padding-right: 0;
+  width: 70%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 400px) {
+    .murious_landing{
+        height: 41.5rem;
+        width: 100%;
+        background-position: center;
+        background-size: 50rem;
+        background-color: #000;
+    }
+    .murious_date{
+        font-size: 24px;
+    }
+    .event_button_landing{
+        font-size: 24px;
+        left: 22%;
+    }
+}
