@@ -373,13 +373,17 @@
 .hack-content{
     position: absolute;
     right: -10rem;
-    top: 6rem;
+    top: 0rem;
 }
 .hero-section{
   width: 75% !important;
 }
 .iel{
   position: absolute;
-  right: 0;
-  top: 20%;
+  left: 5rem;
+  top: -3rem;
+  width: 15rem;
+}
+.orange-divider{
+  display: none;
 }
