@@ -390,9 +390,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .glitchy {
   font-size: 2rem;
-  animation: glitch 1s infinite;
+  animation: glitchi 1s infinite;
 }
-@keyframes glitch {
+@keyframes glitchi {
   0%,50%,100%{
   transform: skewX(0deg) translateX(0px) scale(1,1);
 	  text-shadow: 0px 0 cyan;
