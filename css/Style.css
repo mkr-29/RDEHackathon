@@ -389,7 +389,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 .glitchy {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 0.4rem;
   animation: glitchi 1s infinite;
 }
